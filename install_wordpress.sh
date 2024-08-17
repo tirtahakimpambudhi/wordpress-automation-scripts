@@ -32,7 +32,10 @@ check_url() {
         exit 1
     fi
 }
-
+if ! grep -E "Ubuntu|Debian" /etc/os-release > /dev/null; then
+    print_red "This script only supports Ubuntu or Debian."
+    exit 1
+fi
 if [[ $EUID -ne 0 ]]; then
   print_red "This script must be run as root."
   exit 1
