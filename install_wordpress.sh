@@ -62,10 +62,10 @@ read -p "WordPress Username: " wp_user
 read -sp "WordPress Password: " wp_pass
 echo
 read -p "WordPress Database: " wp_db
-
+print_green "====================================="
 mysql -e "CREATE DATABASE $wp_db; CREATE USER '$wp_user'@'localhost' IDENTIFIED BY '$wp_pass'; GRANT ALL PRIVILEGES ON $wp_db.* TO '$wp_user'@'localhost'; FLUSH PRIVILEGES;" -u root -p
 
-print_green "Setup WordPress"
+print_green "Download WordPress"
 rm /var/www/html/index.html
 wget https://wordpress.org/latest.tar.gz
 tar xzvf latest.tar.gz
