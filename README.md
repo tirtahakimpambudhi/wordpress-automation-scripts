@@ -59,7 +59,6 @@ Once the script completes, WordPress will be installed and ready for use. You ca
 
 ## Notes
 
-- Ensure you have access to a web server (e.g., Apache or Nginx) and the necessary database server.
 - These scripts require Bash to run. Ensure you are using an operating system that supports Bash, such as Linux or macOS. If you are using Windows, you can run these scripts using WSL (Windows Subsystem for Linux).
 
 ## License
