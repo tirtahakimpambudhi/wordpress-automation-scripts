@@ -37,6 +37,7 @@ chmod +x install_wordpress.sh && ./install_wordpress.sh
 In the script, there is the mysql_secure_installation command. I recommend using the following answers to the prompts:
 Follow the prompts to:
  - Validate Plugin Password : n
+ 
  I recommend "n" to avoid errors but in some cases answering "y" works. 
  **note** if you are sure to answer "y" I recommend choosing a low level for the password
  - Remove anonymous users : y
