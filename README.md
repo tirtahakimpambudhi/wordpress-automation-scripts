@@ -1,6 +1,3 @@
-Sure, here's the `README.md` in English:
-
-```markdown
 # WordPress Automation Scripts
 
 This repository contains automation scripts for installing WordPress using Bash. The project simplifies the WordPress installation process by executing a series of automated commands.
@@ -35,12 +32,24 @@ bash install_wordpress.sh
 chmod +x install_wordpress.sh && ./install_wordpress.sh
 ```
 
-### 4. Database Configuration
+### 4. Database, Wordpress Configuration
 
-The installation script will prompt you to enter database configuration details. Ensure you have access to a MySQL or MariaDB database and note the following details:
-- Database name
-- Database user
-- Database user password
+In the script, there is the mysql_secure_installation command. I recommend using the following answers to the prompts:
+Follow the prompts to:
+ - Validate Plugin Password : n
+ I recommend "n" to avoid errors but in some cases answering "y" works. 
+ **note** if you are sure to answer "y" I recommend choosing a low level for the password
+ - Remove anonymous users : y
+ - Disallow root login remotely : n
+ **dont use in production** 
+ - Remove the test database : y
+ 
+ - Reload privilege tables : y
+ 
+After this prompt there is another prompt as well. The installation script will prompt you to enter wordpress database configuration details. 
+- Wordpress username
+- Wordpress Password 
+- Wordpress Database Name
 
 ### 5. Complete the Installation
 
