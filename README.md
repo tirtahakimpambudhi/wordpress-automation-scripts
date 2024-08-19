@@ -42,6 +42,7 @@ Follow the prompts to:
  **note** if you are sure to answer "y" I recommend choosing a low level for the password
  - Remove anonymous users : y
  - Disallow root login remotely : n
+
  **dont use in production** 
  - Remove the test database : y
  
